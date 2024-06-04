@@ -13,26 +13,6 @@ extension Color {
 }
 
 //MARK: Botones
-struct NextButton: View {
-   
-    var buttonName: String
-    
-    var body: some View {
-        Button {
-            //Add action
-        } label: {
-            Image(systemName: "arrow.forward")
-                .foregroundStyle(.white)
-            Text(buttonName)
-                .font(.system(.subheadline))
-                .padding()
-               
-                .foregroundColor(.white)
-                .cornerRadius(8)
-        }
-        
-    }
-}
 
 struct SimpleButton: View {
     var buttonName: String
@@ -43,11 +23,19 @@ struct SimpleButton: View {
             //Add action
         }
             Text(buttonName)
-                .font(.system(.subheadline))
-                .padding()
-                .background(Color.green)
-                .foregroundColor(.white)
-                .cornerRadius(8)
+            .font(.headline)
+            .fontDesign(.default)
+            .font(.system(size: 100))
+            .foregroundColor(.navyBlue)
+            .frame(width: 200, alignment: .init(horizontal: .center, vertical: .center))
+            .padding(.all)
+            .background(Color.green)
+            .cornerRadius(6)
+            .clipShape(.capsule)
+            .multilineTextAlignment(.center)
+            .overlay(
+                Capsule()
+                    .stroke(Color.white, lineWidth: 2))
         }
         
     }

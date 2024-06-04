@@ -16,6 +16,9 @@
 		B192D6472C095F2B00719984 /* AppStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192D6462C095F2B00719984 /* AppStyles.swift */; };
 		B192D64A2C096C1400719984 /* RegistrerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192D6492C096C1400719984 /* RegistrerView.swift */; };
 		B192D64C2C096F9A00719984 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192D64B2C096F9A00719984 /* LoginView.swift */; };
+		B192D64E2C0A900900719984 /* StaticSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192D64D2C0A900900719984 /* StaticSplashScreen.swift */; };
+		B192D6502C0A923B00719984 /* RegisterDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192D64F2C0A923B00719984 /* RegisterDataView.swift */; };
+		B192D6522C0E6E7700719984 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192D6512C0E6E7700719984 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		B192D6462C095F2B00719984 /* AppStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyles.swift; sourceTree = "<group>"; };
 		B192D6492C096C1400719984 /* RegistrerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrerView.swift; sourceTree = "<group>"; };
 		B192D64B2C096F9A00719984 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B192D64D2C0A900900719984 /* StaticSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticSplashScreen.swift; sourceTree = "<group>"; };
+		B192D64F2C0A923B00719984 /* RegisterDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDataView.swift; sourceTree = "<group>"; };
+		B192D6512C0E6E7700719984 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +97,11 @@
 			children = (
 				B192D6482C09620D00719984 /* Resources */,
 				B192D6402C094DBE00719984 /* SplashScreenView.swift */,
+				B192D64D2C0A900900719984 /* StaticSplashScreen.swift */,
 				B192D6422C094E9A00719984 /* MainScreenView.swift */,
 				B192D6492C096C1400719984 /* RegistrerView.swift */,
+				B192D64F2C0A923B00719984 /* RegisterDataView.swift */,
+				B192D6512C0E6E7700719984 /* LoginViewModel.swift */,
 				B192D64B2C096F9A00719984 /* LoginView.swift */,
 			);
 			path = Modules;
@@ -177,11 +186,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B192D6332C09493D00719984 /* ContentView.swift in Sources */,
+				B192D6502C0A923B00719984 /* RegisterDataView.swift in Sources */,
 				B192D64C2C096F9A00719984 /* LoginView.swift in Sources */,
 				B192D6472C095F2B00719984 /* AppStyles.swift in Sources */,
 				B192D64A2C096C1400719984 /* RegistrerView.swift in Sources */,
 				B192D6312C09493D00719984 /* FinAppMxApp.swift in Sources */,
 				B192D6412C094DBF00719984 /* SplashScreenView.swift in Sources */,
+				B192D64E2C0A900900719984 /* StaticSplashScreen.swift in Sources */,
+				B192D6522C0E6E7700719984 /* LoginViewModel.swift in Sources */,
 				B192D6432C094E9A00719984 /* MainScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

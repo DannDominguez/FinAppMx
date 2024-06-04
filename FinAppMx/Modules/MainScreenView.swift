@@ -16,20 +16,28 @@ struct MainScreenView: View {
             ZStack {
                 Color.navyBlue
                     .edgesIgnoringSafeArea(.all)
-                
                 VStack {
-                    Spacer()
-                    if showSplashScreen {
-                        SplashScreenView()
-                            .frame(width: 200, height: 200)
-                            .offset(y: stopSplashAnimation ? 0 : 1)
-                            .onAppear {
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                                    withAnimation {
-                                        stopSplashAnimation = true
+//                    HStack{
+//                        StaticSplashView()
+//                            .padding(.top, -200)
+//                    }
+                    VStack(spacing: 10) {
+                        HStack {
+                            Spacer()
+                            if showSplashScreen {
+                                SplashScreenView()
+                                    .frame(alignment: .center)
+                                    .padding(.top, -350)
+                                    .offset(y: stopSplashAnimation ? 0 : 1)
+                                    .onAppear {
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                            withAnimation {
+                                                stopSplashAnimation = true
+                                            }
+                                        }
                                     }
-                                }
                             }
+                        }
                         
                     }
                     Spacer()
@@ -50,8 +58,10 @@ struct MainScreenView: View {
                                 .overlay(
                                     Capsule()
                                         .stroke(Color.white, lineWidth: 2))
+                            
                         }
-                    }.padding(.bottom, -100)
+                    }.padding(.top, -200)
+                    
                     
                     HStack {
                         NavigationLink(destination: LoginView()) {
@@ -60,18 +70,18 @@ struct MainScreenView: View {
                                 .fontDesign(.default)
                                 .font(.system(size: 100))
                                 .foregroundStyle(.white)
-                                .padding(.top, 100)
-                        }
+                            
+                        }.padding(.top, -100)
                     }
-                    
                 }
+                
             }
             .navigationBarHidden(true)
             
-                }
-            }
         }
-   
-    #Preview {
-        MainScreenView()
     }
+}
+
+#Preview {
+    MainScreenView()
+}
